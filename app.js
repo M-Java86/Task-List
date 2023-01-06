@@ -120,4 +120,15 @@ window.addEventListener('load', () => {
 
   // TODO: Add capability to save tasks between refreshes
   // ** hint: window.localStorage()
+  const taskList = ['task1', 'task2', 'task3'];
+
+  // Save the list to local storage
+  //The setItem method allows you to store a value in local storage.
+  window.localStorage.setItem('taskList', JSON.stringify(todoList));
+  //local storage only stores strings, you need to use JSON.stringify to convert the list to a string when saving it, and JSON.parse to convert it back to a list when retrieving it.
+  //inspiration: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+  //https://javascript.plainenglish.io/how-to-store-json-data-in-local-storage-js-react-angular-cba97508fbc5
+
+  // Retrieve the list from local storage
+  const storedList = JSON.parse(localStorage.getItem('taskList'));
 });
