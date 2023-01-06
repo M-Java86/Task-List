@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alien's Tasks</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="/app.js" defer></script>
+  </head>
+
+  <body>
+    <!--
+
+      Header
+
+      > h1 title,
+
+      > form
+
+        > input
+
+        > input
+
+    -->
+
+    <header>
+      <h1>Alien's Task List</h1>
+
+      <form id="new-task-form" autocomplete="off">
+        <input
+          type="text"
+          id="new-task-input"
+          placeholder="What havoc is to be wrought?"
+        />
+
+        <input type="submit" id="new-task-submit" value="Add Task" />
+      </form>
+    </header>
+
+    <!--
+
+      Main body containing tasks
+
+        > main
+
+          > section
+
+            > h2 title
+
+            > tasks
+
+              > task
+
+                > actions
+
+                  > btns
+
+    -->
+
+    <main>
+      <section class="task-list">
+        <h2>Tasks</h2>
+
+        <div id="tasks"></div>
+      </section>
+    </main>
+  </body>
+</html>
